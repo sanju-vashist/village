@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007b5e;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #007b5e;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about-us, .public-service, .gallery, .facility-overview {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.facility-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #007b5e;
+}
+
+.facility-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.facility {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.facility img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.facility h3 {
+    margin-top: 1rem;
+    color: #007b5e;
+}
+
+.services, .gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.services img, .gallery-items img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h3 {
+    margin-bottom: 1rem;
+    color: #007b5e;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+}
+
+form button:hover {
+    background-color: #005f46;
+}
+
+.info, .leader-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.info img, .leader-info img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 2rem;
+    border-radius: 8px;
+}
+
+.info .right, .leader-info .right {
+    flex: 1;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.member {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.work-item {
+    flex: 1 1 calc(33% - 2rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .facility-row {
+        flex-direction: column;
+    }
+
+    .facility {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .info, .leader-info {
+        flex-direction: column;
+    }
+
+    .info img, .leader-info img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .services img, .gallery-items img {
+        max-width: 100%;
+    }
+    
+    .work {
+        flex-direction: column;
+    }
+
+    .work-item {
+        width: 100%;
+    }
+
+    .facility {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    .about-us, .public-service, .gallery, .facility-overview {
+        padding: 1rem;
+    }
+
+    .facility img {
+        padding-bottom: 0.5rem;
+    }
+}
